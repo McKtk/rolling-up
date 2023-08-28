@@ -1,9 +1,6 @@
 .App {
   text-align: center;
   color: #ff0000;
-  animation-name: headerani;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
 }
 
 .App-logo {
@@ -27,6 +24,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
@@ -40,7 +38,7 @@
 
 .header {
   color: #ffffff;
-  animation-name: 'headerani';
+  animation-name: headerani;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }

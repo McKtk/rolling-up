@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './Home';
-import TopNav from './topNav'
+import TopNav from './topNav';
+import Roller from './Dice';
 import reportWebVitals from './reportWebVitals';
 import './index.scss'
 import {
@@ -10,17 +11,14 @@ import {
   Route
 } from "react-router-dom";
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <TopNav/>
+        <TopNav className="navigation"/>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
-        {/* <Route>
-          <Roller/>
-        </Route> */}
+        <Route exact path="/roller" element={<Roller/>}/>
       </Routes>
     </Router>
   </React.StrictMode>

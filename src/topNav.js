@@ -29,8 +29,8 @@ const TopNav = () => {
   return (
     <>
     <CssVarsProvider theme={theme}>
-      <Button  variant="soft" onClick={()=>navigate('/')}sx={buttonSx}>Home</Button>
-      <Button  variant="soft" onClick={()=>navigate('/roller')}sx={buttonSx}>Dice Roll</Button>
+      <Button  variant="soft" onClick={()=>navigate('/rolling-up')}sx={buttonSx}>Home</Button>
+      <Button  variant="soft" onClick={()=>navigate('/rolling-up/roller')}sx={buttonSx}>Dice Roll</Button>
     </CssVarsProvider>
     </>
   )

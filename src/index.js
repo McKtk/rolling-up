@@ -12,13 +12,14 @@ import {
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const main = '/rolling-up';
 root.render(
   <React.StrictMode>
     <Router>
         <TopNav className="navigation"/>
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/roller" element={<Roller/>}/>
+        <Route exact path={main} element={<Home/>}/>
+        <Route exact path={main+'/roller'} element={<Roller/>}/>
       </Routes>
     </Router>
   </React.StrictMode>
